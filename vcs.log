@@ -1,0 +1,35 @@
+Command: vcs -l vcs.log -sverilog -debug_all -full64 ./prime_generator_tb.sv ./prime_generator.sv \
+
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+       Version O-2018.09-SP1_Full64 -- Mon Feb 20 21:44:37 2023
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+Parsing design file './prime_generator_tb.sv'
+
+Error-[STASKEC_FIWTE] Function call is not expected.
+./prime_generator_tb.sv, 32
+  Function '$random' is invoked where task is expected.
+  Please correct the above invocation and recompile.
+
+Parsing design file './prime_generator.sv'
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "./prime_generator.sv", 49: token is 'reg'
+        reg [4095:0] x = modular_exponentiation(2'b10, r, n);
+           ^
+
+1 warning
+2 errors
+CPU time: .133 seconds to compile

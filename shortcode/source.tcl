@@ -1,0 +1,1 @@
+source /packages/synopsys/setup/synopsys_setup.tcl
